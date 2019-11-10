@@ -1,0 +1,206 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+
+    box-sizing: border-box;
+
+    background-image: linear-gradient(to bottom, white, orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+}
+.page_container {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px; /*HEIGHT OF MY FOOTER ELEMENT*/
+
+    min-height: 100vh;
+    overflow: hidden; /*THIS FIXED THE SCROLL BAR ISSUE!*/
+}
+
+.content_container {
+    
+}
+
+.wrapper {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px;
+
+    background-color: tomato;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 20px;
+}
+
+.calculadora {
+    background-color: rgb(250, 243, 243);
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    gap: 10px;
+    position: relative;
+
+    margin: auto;
+    padding: 20px;
+
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+#gender_wrapper {
+    border-bottom: 1px solid tomato;
+    border-bottom-style: groove;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#altura_wrapper {
+    border-bottom: 1px solid tomato;
+    border-bottom-style: groove;
+    padding: 10px;
+}
+#peso_wrapper {
+    border-bottom: 1px solid tomato;
+    border-bottom-style: groove;
+    padding: 10px;
+}
+#botão {
+    padding: 10px;
+    margin: auto;
+}
+#botão input {
+    text-decoration: none;
+    border: none;
+
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+
+    padding: 18px;
+    background-color: orange;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+#botão input:hover {
+    background-color: rgb(216, 145, 13);
+}
+
+#output {
+    color: tomato;
+}
+
+.result {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    z-index: 1;
+    
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 80px 20px 80px;
+    max-width: 80%;
+    height: fit-content;
+    height: -moz-fit-content;
+
+    background-color: rgb(250, 243, 243);
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px black;
+
+}
+
+.result #voltar {
+    text-decoration: none;
+    border: none;
+    margin: auto;
+
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+
+    display: block;
+    padding: 18px;
+    background-color: orange;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+.result #voltar:hover {
+    background-color: rgb(216, 145, 13);
+}
+.autor {
+    height: 2.5rem;
+
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    background-color: tomato;
+    color: white;
+
+    font-size: 11pt;
+    align-items: center;
+    justify-content: right;
+
+}
+.autor a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.autor a:hover {
+    color: yellow;
+}
+@media only screen and (max-width: 700px) {
+    .result {
+        font-size: 12pt;
+        padding: 10px 20px 10px 20px;
+    }
+    .autor {
+        font-size: 8pt;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .result {
+        font-size: 08pt;
+        padding: 10px 20px 10px 20px;
+    }
+}
