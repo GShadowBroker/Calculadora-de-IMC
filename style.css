@@ -41,10 +41,6 @@ body {
     overflow: hidden; /*THIS FIXED THE SCROLL BAR ISSUE!*/
 }
 
-.content_container {
-    
-}
-
 .wrapper {
     width: fit-content;
     width: -moz-fit-content;
@@ -156,12 +152,12 @@ body {
     background-color: orange;
     box-shadow: 1px 1px 4px black;
     border-radius: 10px;
-
-    transition: 0.5s;
 }
+
 .result #voltar:hover {
     background-color: rgb(216, 145, 13);
 }
+
 .autor {
     height: 2.5rem;
 
