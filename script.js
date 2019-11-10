@@ -84,11 +84,29 @@ voltar.addEventListener('mouseenter',mouseEnter(voltar));
 function mouseEnter(button) {
     button.style.cursor = 'pointer';
 }
+
 function esconderResultado() {
     let resultado = document.querySelector('.result');
 
     if (resultado.style.visibility === 'visible') {
+        resultado.style.transition = '0s';
         resultado.style.visibility = 'hidden';
     }
 }
+
+function opacityON() {
+    let resultado = document.querySelector('.result');
+
+    resultado.style.transition = '1s';
+    resultado.style.opacity = '0.5';
+}
+function opacityOFF() {
+    let resultado = document.querySelector('.result');
+
+    resultado.style.transition = '0.5s';
+    resultado.style.opacity = '1';
+}
+
+
+/*PRACTICE*/
 

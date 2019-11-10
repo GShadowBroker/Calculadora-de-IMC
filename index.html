@@ -53,7 +53,7 @@
                 <p>Usamos o método atualizado desenvolvido por Nick Trefethen, professor de Análise Numérica na Universidade de Oxford. Ele propôs uma <a href="https://people.maths.ox.ac.uk/trefethen/bmi.html" target="_blank">nova fórmula para cálculo de IMC</a>. Basicamente, sua fórmula propõe trocar o expoente 2 por 2,5, e introduzir um fator “k” para manter a média dos resultados próxima à média do método anterior. O valor que ele atribuiu a "k" foi 1,3. Assim, a nova fórmula fica:</p>
                 <p>IMC = (1,3 x altura) / (peso)<sup>2,5</sup></p>
 
-                <button id="voltar" onclick="esconderResultado()"><a>Voltar</a></button>
+                <button id="voltar" onclick="esconderResultado()" onmouseover="opacityON()" onmouseout="opacityOFF()"><a>Voltar</a></button>
             </div>
             
         </div>
